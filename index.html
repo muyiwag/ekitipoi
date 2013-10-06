@@ -9,44 +9,21 @@
     <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
     <title>Ekitipoi</title>
+     <script src='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.js'></script>
+  <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.css' rel='stylesheet' />
+  <!--[if lte IE 8]>
+    <link href='//api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet'>
+  <![endif]-->
+  <style>
+    body { margin:0; padding:0; }
+    #map { position:absolute; top:0; bottom:0; width:100%; }
+  </style>
   </head>
 
   <body>
-
-    <!-- HEADER -->
-    <div id="header_wrap" class="outer">
-        <header class="inner">
-          <a id="forkme_banner" href="https://github.com/muyiwag/ekitipoi">View on GitHub</a>
-
-          <h1 id="project_title">Ekitipoi</h1>
-          <h2 id="project_tagline">Various Points of Interest in Ekiti State</h2>
-
-            <section id="downloads">
-              <a class="zip_download_link" href="https://github.com/muyiwag/ekitipoi/zipball/master">Download this project as a .zip file</a>
-              <a class="tar_download_link" href="https://github.com/muyiwag/ekitipoi/tarball/master">Download this project as a tar.gz file</a>
-            </section>
-        </header>
-    </div>
-
-    <!-- MAIN CONTENT -->
-    <div id="main_content_wrap" class="outer">
-      <section id="main_content" class="inner">
-        <h3>
-<a name="ekiti-points-of-interest" class="anchor" href="#ekiti-points-of-interest"><span class="octicon octicon-link"></span></a>Ekiti Points of Interest</h3>
-
-<p>These Points of Interest were collected between January and March, 2011 by the Data Team of DSI during the One Hundred Days Free Health Mission of the Fayemi Administration in Ekiti State, Nigeria.</p>
-      </section>
-    </div>
-
-    <!-- FOOTER  -->
-    <div id="footer_wrap" class="outer">
-      <footer class="inner">
-        <p class="copyright">Ekitipoi maintained by <a href="https://github.com/muyiwag">muyiwag</a></p>
-        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
-      </footer>
-    </div>
-
-    
-
-  </body>
+<div id='map'></div>
+<script type='text/javascript'>
+var map = L.mapbox.map('map', 'http://a.tiles.mapbox.com/v3/muyiwa.map-6u4l4d0t.html')
+    .setView([40, -74.50], 9);
+</script>  </body>
 </html>
